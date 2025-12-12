@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <title>NaviLens App 下載</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="refresh" content="5;url=https://play.google.com/store/apps/details?id=com.neosistec.NaviLens&hl=zh_TW">
+</head>
+<body>
+  <h2>正在為您前往 NaviLens 下載頁…</h2>
+
+  <p>若未自動跳轉，請點選：</p>
+
+  <ul>
+    <li>
+      <a href="https://apps.apple.com/us/app/navilens/id1273704914">
+        iOS｜App Store
+      </a>
+    </li>
+    <li>
+      <a href="https://play.google.com/store/apps/details?id=com.neosistec.NaviLens&hl=zh_TW">
+        Android｜Google Play
+      </a>
+    </li>
+  </ul>
+
+  <script>
+    (function () {
+      var ua = navigator.userAgent.toLowerCase();
+      var isIOS = /iphone|ipad|ipod/.test(ua) ||
+        (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
+      var isAndroid = /android/.test(ua);
+
+      if (isIOS) {
+        location.replace("https://apps.apple.com/us/app/navilens/id1273704914");
+      } else if (isAndroid) {
+        location.replace("https://play.google.com/store/apps/details?id=com.neosistec.NaviLens&hl=zh_TW");
+      }
+    })();
+  </script>
+</body>
+</html>
